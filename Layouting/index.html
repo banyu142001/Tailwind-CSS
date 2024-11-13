@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind CSS - Layouting</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+              viga: ["Viga"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="dark:bg-slate-800 dark:text-white">
+    <!-- section 1 -->
+    <section
+      class="mx-6 bg-gradient-to-r from-blue-700 to-teal-300 py-1 text-white"
+    >
+      <h1 class="text-4xl font-bold text-center mt-6">
+        Mari belajar mengenai
+        <span>Tailwind CSS</span>
+      </h1>
+      <h5 class="text-center my-2 mb-5 text-slate-900">
+        <small
+          >Layouting | by <a href="">Bayu Gurium, 12 November 2024.</a></small
+        >
+      </h5>
+    </section>
+
+    <!-- container 1 -->
+    <div class="container px-6 mt-4 mx-auto" id="home">
+      <h1 class="text-1xl font-bold mb-2">1. Container</h1>
+      <div class="border rounded-lg p-6 shadow-lg">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          sit, assumenda dolores itaque, odio doloremque explicabo eum tempora
+          in distinctio debitis! Esse voluptatem mollitia, deserunt sint vitae
+          rerum tempore laborum! Lorem ipsum dolor, sit amet consectetur
+        </p>
+      </div>
+    </div>
+
+    <!-- container 2 -->
+    <div class="container px-6 mt-4 mx-auto">
+      <h1 class="text-1xl font-bold mb-2">2. float</h1>
+      <div class="border rounded-lg p-6 shadow-lg relative">
+        <div
+          class="w-10 h-10 bg-sky-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2 cursor-pointer"
+        >
+          <span class="m-auto"><a href="#home">🔝</a> </span>
+        </div>
+
+        <div
+          class="w-10 h-10 bg-teal-200 rounded-full flex fixed bottom-5 right-5"
+        >
+          <a href="#" class="m-auto">🔝</a>
+        </div>
+        <img
+          src="img/bg.jpg"
+          alt="laptop"
+          width="150"
+          class="float-right mx-2"
+        />
+        <p class="text-start">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+          sit, assumenda dolores itaque, odio doloremque explicabo eum tempora
+          in distinctio debitis! Esse voluptatem mollitia, deserunt sint vitae
+          rerum tempore laborum! Lorem ipsum dolor, sit amet consectetur
+        </p>
+      </div>
+    </div>
+
+    <!-- container 3 -->
+    <div class="container px-6 mt-4 mx-auto mb-96">
+      <h1 class="text-1xl font-bold mb-2">3. Columns</h1>
+      <div class="border rounded-lg p-6 shadow-lg columns-2">
+        <img src="img/bg.jpg" alt="laptop" width="150" class="mb-3" />
+        <img src="img/bg.jpg" alt="laptop" width="150" class="mb-3" />
+        <img src="img/bg.jpg" alt="laptop" width="150" class="mb-3" />
+        <img src="img/bg.jpg" alt="laptop" width="150" class="mb-3" />
+        <img src="img/bg.jpg" alt="laptop" width="150" class="mb-3" />
+        <img src="img/bg.jpg" alt="laptop" width="150" class="mb-3" />
+      </div>
+    </div>
+  </body>
+</html>

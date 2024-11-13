@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar Tailwind CSS - Resonsive Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- my fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              inter: ["Inter"],
+              viga: ["Viga"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="container px-6 mt-6 max-w-md mx-auto sm:max-w-xl md:max-w-5xl font-inter">
+      <h1 class="text-4xl font-bold my-3 sm:text-5xl">
+        Bayu <span class="text-sky-400"> Gur</span>ium
+      </h1>
+      <img
+        src="img/bg-2.jpg"
+        alt=""
+        class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:h-48 sm:w-full sm:object-cover sm:object-center"
+      />
+      <h2 class="mt-6 text-2xl font-semibold text-slate-800">
+        Mari Belajar Programming Bersama WPU
+      </h2>
+      <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+        deserunt nobis vitae dolorum esse libero, odio sed quidem debitis, ut
+        impedit explicabo voluptate.
+      </p>
+
+      <div>
+        <a
+          href=""
+          class="mt-4 inline-block px-4 py-3 bg-red-600 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider sm:mt-6 sm:text-base"
+          >Subscribe Cahanel Youtube</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
